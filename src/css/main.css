@@ -36,6 +36,11 @@ body {
     color: #fff;
     background-color: #be3bdf;
     border-radius: 12px;
+    transition: .4s;
+}
+
+.main__button:hover {
+    background-color: #892ba0;
 }
 
 .container {
