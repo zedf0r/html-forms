@@ -7,7 +7,6 @@ const { watch } = require('fs');
 module.exports = {
     mode: 'production',
     entry: './src/js/index.js',
-    watch: true,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js',
