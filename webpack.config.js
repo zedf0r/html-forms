@@ -1,10 +1,13 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPluign = require('html-webpack-plugin');
 const path = require('path');
+const { watch } = require('fs');
+
 
 module.exports = {
     mode: 'production',
     entry: './src/js/index.js',
+    watch: true,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js',
@@ -16,7 +19,7 @@ module.exports = {
             directory: path.join(__dirname, 'dist'),
         },
         port: 9000,
-        hot: true
+        hot: true,
     },
     module: {
         rules: [
